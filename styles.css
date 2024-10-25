@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #acafe2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f6f3ef;
+}
+
+.logo img {
+    height: 58px; /* Ajusta la altura del logo */
+}
+
+.navbar ul {
+    list-style: none;
+    //display: flex;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre los enlaces */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Color del texto */
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #01c2c2; /* Color al pasar el mouse */
+}
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        display: none; /* Oculta el menú por defecto */
+        position: absolute; /* Posiciona el menú */
+        background-color: rgb(9, 9, 9); /* Fondo blanco para el menú */
+        width: 100%; /* Ancho completo */
+        top: 60px; /* Justo debajo del header */
+        left: 0;
+        z-index: 1000; /* Asegura que esté encima de otros elementos */
+    }
+
+    .navbar.active ul {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+}
+
+/*body hero */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c6a785;
+}
+
+.hero {
+    background-image: url("benis.jpg");
+    box-shadow: 10px 10px 20px papayawhip(0, 0, 0, 0.5);
+    font-family: 'Comic Sans MS';
+    text-align: center; /* Centrar el texto */
+    padding: 100px; /* Espaciado superior e inferior */
+    background-color: #eee9e5;
+
+    
+}
+.hero {
+    color: #0f0f0f; /* Color del texto */
+    padding-top: 10px 15px 20px 25px;/* superior, derecha, inferior, izquierda*/
+    background-color:  #b3803d;
+}
+h1{
+    color:#000505;
+    background-color: #eee9e5;
+    font-family: 'Comic Sans MS';
+}
+.hero h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.hero p {
+    font-size: 1.2em; /* Tamaño de la descripción */
+    margin-bottom: 30px; /* Espacio debajo de la descripción */
+}
+
+.cta-button {
+    background-color: #f72a10; /* Color del botón */
+    color: rgb(251, 249, 249); /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.cta-button:hover {
+    background-color: #f3e011; /* Color al pasar el mouse */
+}
+/* Sección Servicios */
+.services {
+    text-align: center;
+}
+section {
+    background-color: #c19557ee;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*link del body*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/*
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    width: 200px; /* Ancho de la tarjeta 
+    text-align: center;
+    transition: transform 0.3s;
+}*/
+
+
+/* Sección Categorías y Productos */
+.categories, .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        padding: 20px;
+
+}
+
+.card, .product-card {
+    background-color: #fee2bf; /* Blanco para las tarjetas */
+    margin: 10px;
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(249, 247, 247, 0.906); /* Sombra sutil */
+    width: 300px; /* Ancho de la tarjeta */
+    text-align: center;
+
+}
+
+.card img, .product-card img {
+   width: 90px; /* Imagen responsiva */
+   height: 60; /* Mantener proporción */
+}
+
+
+.card h2 {
+    padding: 40px;
+    font-size: 1.5em; /* Tamaño del texto */
+    
+}
+
+.card a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Hereda el color del texto */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+/*galeria*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+}
+
+.gallery-item {
+    background-color:#bbeb1c; /* Color de fondo de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el desbordamiento */
+    box-shadow: 0 2px 5px rgba(189, 176, 36, 0.1); /* Sombra para efecto de elevación */
+}
+
+.gallery-item img {
+    width: 80px; /* Imagen responsiva */
+    height: auto; /* Mantener la proporción */
+    background-color:#d83c3c;
+}
+
+.gallery-item p {
+    text-align: center; /* Centrar el texto */
+    padding: 10px;
+}
+
+.gallery-item a {
+    text-decoration: none; /* Sin subrayado */
+    color: #fdfafa; /* Color del texto */
+}
+
+.gallery-item a:hover {
+    color: #181c20; /* Color al pasar el mouse */
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #a27947; /* Color de fondo del footer */
+    color: rgb(252, 244, 244); /* Color del texto */
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1; /* Cada columna ocupa el mismo espacio */
+    margin: 0 10px; /* Espacio entre columnas */
+}
+
+.footer-column h3 {
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.footer-column p {
+    font-size: 0.9em; /* Tamaño del texto */
+}
+
+.footer-column ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0.9em; /* Sin padding */
+    
+}
+
+.footer-column li {
+    margin-bottom: 5px; /* Espacio entre enlaces */
+}
+
+.footer-column a {
+    color: rgb(255, 252, 252); /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.social-media .social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para los iconos */
+    gap: 10px; /* Espacio entre iconos */
+}
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espaciado entre los iconos */
+    
+    
+}
+.social-icon {
+    width: 34px; /* Ajusta el tamaño */
+    height: auto; /* Mantener relación de aspecto */
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Ocultar menú en pantallas pequeñas */
+    }  
+  }
+    .menu-toggle {
+        display: block; /* Mostrar botón del menú */
+        cursor: pointer; 
+    }
+ }
